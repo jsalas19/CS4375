@@ -10,3 +10,4 @@
 ## Approach
 * First: Switch statment
 * Second: Dictionary
+* Third: If-else statements
