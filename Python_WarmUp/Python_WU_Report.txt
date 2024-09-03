@@ -19,4 +19,12 @@ user text file (.txt).
 
 Approaches
 
-At the start of this exercise I 
+At the start of this exercise I intended to use a switch case and ended up settling on a dictionary
+that would provide a result in O(log(n)) rather than a O(n). This is because later down the line if and
+when I wanted to add extra instructions to the reponse-set the look-up time would remain the same.
+
+Results
+
+
+
+Conclusion
