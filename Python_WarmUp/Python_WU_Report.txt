@@ -1,0 +1,30 @@
+Name:
+Date:
+CS 4375: Operating Systems Concepts
+Professor Ward
+
+
+Introduction
+
+For this warm-up exercise we were tasked with creating a simple chatbot with the following mapping.
+
+    female --> How excellent! Are you a CS major?
+    male --> Me too. Are you a CS major?
+    no --> Too bad. Anyway, what's an animal you like, and you don't?
+    yes --> Excellent, I am too. What's an animal you don't like, and two you do?
+    [anything else] --> [last word] awesome, but I hate [first word] too. Bye for now.
+
+That could be run in one of two modes either by standard user input via keyboard or a pre-written
+user text file (.txt).
+
+Approaches
+
+At the start of this exercise I intended to use a switch case and ended up settling on a dictionary
+that would provide a result in O(log(n)) rather than a O(n). This is because later down the line if and
+when I wanted to add extra instructions to the reponse-set the look-up time would remain the same.
+
+Results
+
+
+
+Conclusion
