@@ -1,0 +1,28 @@
+
+
+
+1.  The CPU utilization should be 100% as we have queued a process to run right after 
+    first was completed, and the program stopped as the process was completed, 
+    which is an important behaviour mentioned in the readME. And I am correct as in the 
+    examples given we add an 3 io-start which are added along with any other process.
+
+2.  The CPU utilization should be 50% as we have two processes and only one is using the
+    CPU while the other is running the IO so should be 10%. The actual result for the CPU
+    were just as expected, but the IO utilization was 40% I believe this is due to the IO 
+    staying ready/waiting until it hits the end of the programs runtime where it throws 
+    an issue at the last record and counts it as an exit, thus making it a 4/5 rather
+    than 5/5.
+
+3.  This will only change the utilization and not the processes themselves, my assumption
+    was correct about the utilization changing although I believed that the percentages 
+    would have been swapped. In this case the CPU utilization was 83.33% and the IO utilization
+    66.67%. I believe this is due to the IO remaining in a waiting state until an issue is
+    raised 2/3's of the way into the program and the CPU stopping before the final iteration.
+
+4.  The system performs exactly as it had before as it runs each process to completion and
+    then switches to the next process.
+
+5.  The system performs exactly as it had before but switches to the CPU process as it 
+    was issued an IO, thus reducing the IO utilization.
+
+
