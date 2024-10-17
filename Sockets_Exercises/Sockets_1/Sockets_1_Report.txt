@@ -1,0 +1,11 @@
+In this exercise we were tasked with creating a program that would access and
+retrieve two strings from a locally hosted server with the IPv4 address 127.0.0.1
+and would open up port 7069 to allow our program to gain access to the 
+aforementioned two strings.
+
+Below is the result of running server-demo.py alongside our client (Sockets_1.py):
+
+
+Below is the result of running server-demo2.py alongside our client (Sockets_1.py):
+
+
